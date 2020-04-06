@@ -14,7 +14,7 @@ Ansible Fundamentals:
 https://docs.ansible.com
 
 - if you want to communicate with the target machine using ansible, then we have to install ssh for linux machine, and Powershell Remoting for windows.
-- Ansible is agentless.
+- Ansible is agentless. And it's written on Python script. it's work on push mechanism 
 - Information about the target machines are store in the Inventory file, for the inventory file ansible uses default file which is /etc/ansible/hosts.
 
 > #Sample Inventory File
@@ -44,7 +44,7 @@ db
     ansible_user - root/administrator
     ansible_ssh_pass - password
   ```  
-- Security - `Ansible Vaul` `To store password`
+- Security - `Ansible Vault` `To store password`
 - How to disable host-key fingerprint (not recommended way in real prod)
     in `/etc/ansible/ansible.cfg` and uncomment `host_key_checking=false` 
 
